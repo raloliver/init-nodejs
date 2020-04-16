@@ -12,9 +12,12 @@ async function main() {
       names.push(poke.name)
     });
     */
-    const names = res.results.map(function (poke) {
-      return poke.name
-    })
+
+    /**
+     * map implementation: you dont need an array const to push     * 
+     * 
+    */
+    const names = res.results.map(poke => poke.name)
     console.log(names)
   } catch (err) {
     console.log('Error ', err)
