@@ -1,12 +1,12 @@
 const axios = require('axios')
-const API_URI = `https://pokeapi.co/api/v2/pokemon/`
+const API_URI = `https://pokeapi.co/api/v2/`
 
 /**
  * when whant pagination, use those params: ?offset=0&limit=10
  * @param {*} name 
  */
-async function getPoke(name) {
-    const url = `${API_URI}/${name}`
+async function getPoke(name, type) {
+    const url = type ? `${API_URI}/${type}/${name}` : `${API_URI}/pokemon/${name}`
     const res = await axios.get(url)
     return res.data
 }
