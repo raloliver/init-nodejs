@@ -1,5 +1,5 @@
 const axios = require('axios')
-const API_URI = `https://pokeapi.co/api/v2/`
+const API_URI = `https://pokeapi.co/api/v2`
 
 /**
  * when whant pagination, use those params: ?offset=0&limit=10
