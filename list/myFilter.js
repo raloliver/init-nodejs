@@ -20,7 +20,7 @@ async function main() {
         })
 
         const names = saur.map(poke => poke.name)
-        console.log(names)
+        console.log('names with saur', names)
     } catch (err) {
         console.log('Error ', err)
     }
