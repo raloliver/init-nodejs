@@ -8,6 +8,10 @@ Array.prototype.myReduce = function (cb, init) {
     return final
 }
 
+/**
+ * #TODO: implements myReduce to concat string of nested array, [['name'], ['surname']]
+ *
+ */
 async function main() {
     try {
         const { abilities } = await getPoke('pikachu')
