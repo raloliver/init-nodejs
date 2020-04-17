@@ -13,7 +13,6 @@ async function main() {
         const saur = results.filter((poke) => poke.name.toLowerCase().indexOf('saur') !== -1)
 
         const names = saur.map(poke => poke.name)
-
         console.log('names with saur', names)
     } catch (err) {
         console.log('Error ', err)
